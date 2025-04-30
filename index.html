@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invest Equilíbrio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          transitionProperty: {
+            'height': 'height'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-purple-300 text-white font-sans">
+
+  <header class="bg-purple-700 p-6 relative">
+    <div class="flex items-center justify-between">
+      <div class="flex items-center space-x-2">
+        <div class="bg-yellow-400 rounded-full w-8 h-8"></div>
+        <h1 class="text-xl font-bold">INVEST <span class="font-light">EQUILÍBRIO</span></h1>
+      </div>
+      <nav class="space-x-6 hidden md:flex mr-28">
+        <a href="index.html" class="text-white hover:text-yellow-400 transition-colors duration-300">Início</a>
+        <a href="como-funciona.html" class="text-white hover:text-yellow-400 transition-colors duration-300">Como Funciona</a>
+        <a href="beneficios.html" class="text-white hover:text-yellow-400 transition-colors duration-300">Benefícios</a>
+        <a href="planos.html" class="text-white hover:text-yellow-400 transition-colors duration-300">Planos</a>
+        <a href="blog.html" class="text-white hover:text-yellow-400 transition-colors duration-300">Blog</a>
+        <a href="contato.html" class="text-white hover:text-yellow-400 transition-colors duration-300">Contato</a>
+      </nav>      
+      <a href="login.html" class="hidden md:block">
+        <button class="bg-yellow-400 text-purple-900 font-bold px-4 py-2 rounded-full hover:scale-105 transform transition">Entrar</button>
+      </a>
+  
+      <!-- Botão Hambúrguer (Mobile) -->
+      <div id="hamburger" class="md:hidden flex flex-col justify-between w-8 h-6 cursor-pointer">
+        <span class="block h-1 bg-yellow-400 rounded transition-all duration-300"></span>
+        <span class="block h-1 bg-yellow-400 rounded transition-all duration-300"></span>
+        <span class="block h-1 bg-yellow-400 rounded transition-all duration-300"></span>
+      </div>
+    </div>
+  
+    <!-- Menu Mobile -->
+    <div id="mobile-menu" class="hidden flex-col space-y-4 mt-4 text-center md:hidden">
+      <a href="index.html" class="text-white hover:text-yellow-400 transition-colors duration-300 block">Início</a>
+        <a href="como-funciona.html" class="text-white hover:text-yellow-400 transition-colors duration-300 block">Como Funciona</a>
+        <a href="beneficios.html" class="text-white hover:text-yellow-400 transition-colors duration-300 block">Benefícios</a>
+        <a href="planos.html" class="text-white hover:text-yellow-400 transition-colors duration-300 block">Planos</a>
+        <a href="blog.html" class="text-white hover:text-yellow-400 transition-colors duration-300 block">Blog</a>
+        <a href="contato.html" class="text-white hover:text-yellow-400 transition-colors duration-300 block">Contato</a>
+      <a href="login.html" class="block">
+        <button class="bg-yellow-400 text-purple-900 font-bold px-4 py-2 rounded-full hover:scale-105 transform transition mt-4">Entrar</button>
+      </a>
+    </div>
+  
+    <!-- Restante do header continua aqui (texto e imagem do robô) -->
+    <div class="mt-10 flex flex-col md:flex-row items-center md:px-32">
+      <!-- Texto -->
+      <div class="space-y-6 max-w-lg flex-1">
+        <h2 class="text-4xl font-extrabold">Transforme suas finanças em um jogo de sucesso!</h2>
+        <p class="text-purple-200">Aprenda a administrar seu dinheiro de forma divertida, interativa e eficiente.</p>
+        <div class="flex space-x-4">
+          <button class="bg-yellow-400 text-purple-900 font-bold px-6 py-3 rounded-full hover:bg-yellow-300 transition">Comece Agora</button>
+          <button class="border-2 border-yellow-400 text-yellow-400 font-bold px-6 py-3 rounded-full hover:bg-yellow-300 hover:text-purple-900 transition">Veja Como Funciona</button>
+        </div>
+      </div>
+  
+      <!-- Robô -->
+      <div class="hidden md:flex flex-1 justify-end mt-10 md:mt-0 mr-12">
+        <img src="assets/img/Design sem nome.png" alt="Imagem Robô Invest Equilíbrio" class="w-48 md:w-72 h-auto max-w-full object-contain">
+      </div>
+    </div>
+  </header>  
+
+ <!-- COMO FUNCIONA -->
+ <section id="como-funciona" class="py-20 bg-white text-purple-800 text-center">
+  <h3 class="text-4xl font-bold mb-12">Como Funciona</h3>
+  <div class="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-6xl mx-auto px-6">
+    <div class="p-6 bg-purple-100 rounded-2xl shadow hover:scale-105 transition">
+      <div class="text-4xl text-yellow-400 font-extrabold mb-4">1</div>
+      <h4 class="text-xl font-bold mb-2">Cadastro Rápido</h4>
+      <p>Crie sua conta e personalize sua jornada financeira.</p>
+    </div>
+    <div class="p-6 bg-purple-100 rounded-2xl shadow hover:scale-105 transition">
+      <div class="text-4xl text-yellow-400 font-extrabold mb-4">2</div>
+      <h4 class="text-xl font-bold mb-2">Escolha Seu Plano</h4>
+      <p>Selecione a trilha de aprendizado que combina com você.</p>
+    </div>
+    <div class="p-6 bg-purple-100 rounded-2xl shadow hover:scale-105 transition">
+      <div class="text-4xl text-yellow-400 font-extrabold mb-4">3</div>
+      <h4 class="text-xl font-bold mb-2">Complete Missões</h4>
+      <p>Aprenda brincando e receba pontos e recompensas.</p>
+    </div>
+    <div class="p-6 bg-purple-100 rounded-2xl shadow hover:scale-105 transition">
+      <div class="text-4xl text-yellow-400 font-extrabold mb-4">4</div>
+      <h4 class="text-xl font-bold mb-2">Ganhe Certificados</h4>
+      <p>Comprove seu crescimento e avance no seu futuro financeiro.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PLANOS -->
+<section id="planos" class="py-20 bg-purple-700 text-white text-center">
+  <h3 class="text-4xl font-bold mb-12">Escolha o Seu Plano</h3>
+  <div class="flex flex-col md:flex-row justify-center gap-10 max-w-4xl mx-auto">
+    <div class="bg-white text-purple-700 p-10 rounded-3xl shadow hover:scale-105 transition">
+      <h4 class="text-2xl font-bold mb-4">Plano Gratuito</h4>
+      <p class="mb-6 text-purple-600">Acesso às missões básicas e desafios iniciais.</p>
+      <div class="text-4xl font-bold mb-6">R$0/mês</div>
+      <a href="login.html">
+      <button class="bg-yellow-400 text-purple-900 font-bold px-6 py-2 rounded-full hover:bg-yellow-300 transition">Quero Começar</button>
+    </a>
+    </div>
+    <div class="bg-gradient-to-br from-purple-800 to-purple-900 p-10 rounded-3xl shadow hover:scale-105 transition">
+      <h4 class="text-2xl font-bold mb-4 text-yellow-400">Plano Avançado</h4>
+      <p class="mb-6 text-purple-300">Mentorias exclusivas, conteúdos avançados e certificações especiais.</p>
+      <div class="text-4xl font-bold mb-6">R$39,90/mês</div>
+      <button class="bg-yellow-400 text-purple-900 font-bold px-6 py-2 rounded-full hover:bg-yellow-300 transition">Assinar Agora</button>
+    </div>
+  </div>
+</section>
+
+
+<!-- Dicas -->
+<section class="bg-white text-purple-700 py-16 px-6 md:px-8">
+  <h3 class="text-3xl font-bold text-center mb-10">Dicas e Novidades para seu Bolso</h3>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div class="bg-yellow-400 text-purple-900 p-6 rounded-2xl font-bold">Como economizar sem sofrimento</div>
+    <div class="bg-yellow-400 text-purple-900 p-6 rounded-2xl font-bold">Investimentos para iniciantes</div>
+    <div class="bg-yellow-400 text-purple-900 p-6 rounded-2xl font-bold">Organize sua vida financeira com desafios</div>
+  </div>
+</section>  
+
+<!-- FAQ -->
+<section id="faq" class="py-20 bg-purple-600 text-white">
+  <div class="max-w-4xl mx-auto text-center px-6">
+    <h3 class="text-4xl font-bold mb-12">Perguntas Frequentes</h3>
+    <div class="text-left space-y-8">
+      <div>
+        <h4 class="font-bold text-yellow-300 mb-2">Preciso pagar para aprender?</h4>
+        <p class="text-purple-200">Não! Oferecemos um plano gratuito para todos que querem começar a se educar financeiramente.</p>
+      </div>
+      <div>
+        <h4 class="font-bold text-yellow-300 mb-2">O que ganho ao completar missões?</h4>
+        <p class="text-purple-200">Você acumula pontos, desbloqueia conteúdos especiais e recebe certificados digitais.</p>
+      </div>
+      <div>
+        <h4 class="font-bold text-yellow-300 mb-2">É necessário experiência prévia?</h4>
+        <p class="text-purple-200">Não! Nossa metodologia é pensada para iniciantes.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-purple-900 py-6 text-center text-purple-300 text-sm">
+  <p>© 2025 Invest Equilíbrio. Todos os direitos reservados.</p>
+  <div class="flex justify-center mt-4 space-x-4">
+    <a href="#" class="hover:text-white transition">Política de Privacidade</a>
+    <a href="#" class="hover:text-white transition">Termos de Uso</a>
+  </div>
+</footer>
+
+
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    mobileMenu.classList.toggle('hidden');
+  });
+</script>
+
+
+</body>
+</html>

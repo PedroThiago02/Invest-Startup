@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Contato - Invest Equilíbrio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     input:focus, textarea:focus {
@@ -26,7 +27,7 @@
       background: linear-gradient(145deg, #6C3BA9, #8E45D6);
       border-radius: 20px;
       box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
-      padding: 40px;
+      padding: 24px;
       transition: all 0.3s ease;
     }
     .contact-bg:hover {
@@ -45,7 +46,7 @@
     .urgency-banner {
       background-color: #FCD34D;
       color: #6C3BA9;
-      font-size: 1.6rem;
+      font-size: 1.4rem;
       font-weight: bold;
       text-align: center;
       padding: 10px;
@@ -74,102 +75,98 @@
 <body class="bg-purple-800 text-white font-sans min-h-screen flex flex-col">
 
   <!-- Header -->
-<header class="bg-purple-700 p-6">
-  <div class="flex items-center justify-between">
-    <div class="flex items-center space-x-2">
-      <div class="bg-yellow-400 rounded-full w-8 h-8"></div>
-      <h1 class="text-xl font-bold">INVEST <span class="font-light">EQUILÍBRIO</span></h1>
-    </div>
-    <nav class="space-x-6 hidden md:flex mr-28">
-      <a href="index.html" class="text-white hover:text-yellow-400 transition-colors duration-300">Início</a>
+  <header class="bg-purple-700 p-4 md:p-6">
+    <div class="flex items-center justify-between">
+      <div class="flex items-center space-x-2">
+        <div class="bg-yellow-400 rounded-full w-8 h-8"></div>
+        <h1 class="text-lg md:text-xl font-bold">INVEST <span class="font-light">EQUILÍBRIO</span></h1>
+      </div>
+
+      <!-- Navegação Desktop -->
+      <nav class="hidden md:flex space-x-6 mr-10">
+        <a href="index.html" class="text-white hover:text-yellow-400 transition-colors duration-300">Início</a>
         <a href="como-funciona.html" class="text-white hover:text-yellow-400 transition-colors duration-300">Como Funciona</a>
         <a href="beneficios.html" class="text-white hover:text-yellow-400 transition-colors duration-300">Benefícios</a>
         <a href="planos.html" class="text-white hover:text-yellow-400 transition-colors duration-300">Planos</a>
         <a href="blog.html" class="text-white hover:text-yellow-400 transition-colors duration-300">Blog</a>
         <a href="contato.html" class="text-white hover:text-yellow-400 transition-colors duration-300">Contato</a>
-    </nav>      
-    <a href="login.html" class="hidden md:block">
-      <button class="bg-yellow-400 text-purple-900 font-bold px-4 py-2 rounded-full hover:scale-105 transform transition">Entrar</button>
-    </a>
+      </nav>
 
-    <!-- Botão Hambúrguer (Mobile) -->
-    <div id="hamburger" class="md:hidden flex flex-col justify-between w-8 h-6 cursor-pointer">
-      <span class="block h-1 bg-yellow-400 rounded transition-all duration-300"></span>
-      <span class="block h-1 bg-yellow-400 rounded transition-all duration-300"></span>
-      <span class="block h-1 bg-yellow-400 rounded transition-all duration-300"></span>
+      <a href="login.html" class="hidden md:block">
+        <button class="bg-yellow-400 text-purple-900 font-bold px-4 py-2 rounded-full hover:scale-105 transform transition">Entrar</button>
+      </a>
+
+      <!-- Botão Hambúrguer (Mobile) -->
+      <div id="hamburger" class="md:hidden flex flex-col justify-between w-8 h-6 cursor-pointer">
+        <span class="block h-1 bg-yellow-400 rounded transition-all duration-300"></span>
+        <span class="block h-1 bg-yellow-400 rounded transition-all duration-300"></span>
+        <span class="block h-1 bg-yellow-400 rounded transition-all duration-300"></span>
+      </div>
     </div>
-  </div>
 
-  <!-- Menu Mobile -->
-  <div id="mobile-menu" class="hidden flex-col space-y-4 mt-4 text-center md:hidden">
-    <a href="index.html" class="text-white hover:text-yellow-400 transition-colors duration-300 block">Início</a>
-        <a href="como-funciona.html" class="text-white hover:text-yellow-400 transition-colors duration-300 block">Como Funciona</a>
-        <a href="beneficios.html" class="text-white hover:text-yellow-400 transition-colors duration-300 block">Benefícios</a>
-        <a href="planos.html" class="text-white hover:text-yellow-400 transition-colors duration-300 block">Planos</a>
-        <a href="blog.html" class="text-white hover:text-yellow-400 transition-colors duration-300 block">Blog</a>
-        <a href="contato.html" class="text-white hover:text-yellow-400 transition-colors duration-300 block">Contato</a>
-    <a href="login.html" class="block">
-      <button class="bg-yellow-400 text-purple-900 font-bold px-4 py-2 rounded-full hover:scale-105 transform transition mt-4">Entrar</button>
-    </a>
-  </div>
-
-</header>
+    <!-- Menu Mobile -->
+    <div id="mobile-menu" class="hidden flex-col space-y-4 mt-4 text-center md:hidden">
+      <a href="index.html" class="text-white hover:text-yellow-400 transition-colors duration-300 block">Início</a>
+      <a href="como-funciona.html" class="text-white hover:text-yellow-400 transition-colors duration-300 block">Como Funciona</a>
+      <a href="beneficios.html" class="text-white hover:text-yellow-400 transition-colors duration-300 block">Benefícios</a>
+      <a href="planos.html" class="text-white hover:text-yellow-400 transition-colors duration-300 block">Planos</a>
+      <a href="blog.html" class="text-white hover:text-yellow-400 transition-colors duration-300 block">Blog</a>
+      <a href="contato.html" class="text-white hover:text-yellow-400 transition-colors duration-300 block">Contato</a>
+      <a href="login.html" class="block">
+        <button class="bg-yellow-400 text-purple-900 font-bold px-4 py-2 rounded-full hover:scale-105 transition mt-4">Entrar</button>
+      </a>
+    </div>
+  </header>
 
   <div class="urgency-banner">
-    <span>Últimas vagas para consultar nossos planos! Entre em contato agora!</span>
+    Últimas vagas para consultar nossos planos! Entre em contato agora!
   </div>
 
-  <main class="flex-grow flex flex-col items-center justify-center px-8 py-12 space-y-20">
-    <div class="text-center max-w-2xl">
-      <h2 class="text-4xl font-extrabold mb-4">Fale Conosco</h2>
-      <p class="text-lg text-purple-200">Estamos aqui para te ajudar. Envie suas dúvidas ou sugestões e entraremos em contato com você o mais rápido possível.</p>
+  <main class="flex-grow px-4 py-8 space-y-12 md:space-y-20">
+    <div class="text-center max-w-xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-extrabold mb-3">Fale Conosco</h2>
+      <p class="text-base md:text-lg text-purple-200">Estamos aqui para te ajudar. Envie suas dúvidas ou sugestões e entraremos em contato com você o mais rápido possível.</p>
     </div>
 
-    <div class="contact-bg p-12 max-w-4xl mx-auto w-full contact-form">
-      <form action="#" method="POST" class="space-y-8">
-        <div class="form-group grid grid-cols-1 md:grid-cols-2 gap-8">
+    <div class="contact-bg contact-form max-w-2xl mx-auto">
+      <form action="#" method="POST" class="space-y-6">
+        <div class="grid grid-cols-1 gap-6">
           <div class="flex flex-col">
             <label for="nome" class="text-sm font-semibold mb-2">Seu Nome</label>
-            <input type="text" id="nome" name="nome" class="form-input p-4 rounded-xl border-2 border-transparent bg-purple-900 text-white focus:outline-none focus:ring-2 focus:ring-yellow-400" placeholder="Digite seu nome">
+            <input type="text" id="nome" name="nome" class="form-input p-3 rounded-xl border-2 border-transparent bg-purple-900 text-white focus:outline-none focus:ring-2 focus:ring-yellow-400" placeholder="Digite seu nome">
           </div>
           <div class="flex flex-col">
             <label for="email" class="text-sm font-semibold mb-2">Seu Email</label>
-            <input type="email" id="email" name="email" class="form-input p-4 rounded-xl border-2 border-transparent bg-purple-900 text-white focus:outline-none focus:ring-2 focus:ring-yellow-400" placeholder="Digite seu e-mail">
+            <input type="email" id="email" name="email" class="form-input p-3 rounded-xl border-2 border-transparent bg-purple-900 text-white focus:outline-none focus:ring-2 focus:ring-yellow-400" placeholder="Digite seu e-mail">
+          </div>
+          <div class="flex flex-col">
+            <label for="mensagem" class="text-sm font-semibold mb-2">Sua Mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows="5" class="form-textarea p-3 rounded-xl border-2 border-transparent bg-purple-900 text-white focus:outline-none focus:ring-2 focus:ring-yellow-400" placeholder="Escreva sua mensagem aqui..."></textarea>
           </div>
         </div>
-        <div class="flex flex-col">
-          <label for="mensagem" class="text-sm font-semibold mb-2">Sua Mensagem</label>
-          <textarea id="mensagem" name="mensagem" rows="6" class="form-textarea p-4 rounded-xl border-2 border-transparent bg-purple-900 text-white focus:outline-none focus:ring-2 focus:ring-yellow-400" placeholder="Escreva sua mensagem aqui..."></textarea>
-        </div>
         <div class="text-center">
-          <button type="submit" class="submit-btn bg-yellow-400 text-purple-900 font-bold px-8 py-3 rounded-full hover:bg-yellow-300 transition transform">
+          <button type="submit" class="submit-btn bg-yellow-400 text-purple-900 font-bold px-6 py-3 rounded-full hover:bg-yellow-300 transition">
             Enviar Mensagem
           </button>
         </div>
       </form>
     </div>
 
-    <section class="mt-20 max-w-5xl mx-auto text-center">
-      <h3 class="text-3xl font-bold mb-6">Outras Formas de Contato</h3>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-12 contact-icons">
+    <section class="mt-10 md:mt-20 max-w-3xl mx-auto text-center">
+      <h3 class="text-2xl md:text-3xl font-bold mb-6">Outras Formas de Contato</h3>
+      <div class="grid grid-cols-1 gap-8 md:grid-cols-3 contact-icons">
         <div class="space-y-4">
-          <div class="text-4xl">
-            <i class="fas fa-phone-alt"></i>
-          </div>
+          <div><i class="fas fa-phone-alt"></i></div>
           <h4 class="text-xl font-semibold">Telefone</h4>
           <p class="text-purple-200">+55 11 99999-9999</p>
         </div>
         <div class="space-y-4">
-          <div class="text-4xl">
-            <i class="fas fa-envelope"></i>
-          </div>
+          <div><i class="fas fa-envelope"></i></div>
           <h4 class="text-xl font-semibold">Email</h4>
           <p class="text-purple-200">contato@investequilibrio.com.br</p>
         </div>
         <div class="space-y-4">
-          <div class="text-4xl">
-            <i class="fas fa-map-marker-alt"></i>
-          </div>
+          <div><i class="fas fa-map-marker-alt"></i></div>
           <h4 class="text-xl font-semibold">Localização</h4>
           <p class="text-purple-200">Rua Exemplo, 123, São Paulo - SP, Brasil</p>
         </div>
@@ -189,9 +186,7 @@
   <script>
     const hamburger = document.getElementById('hamburger');
     const mobileMenu = document.getElementById('mobile-menu');
-  
     hamburger.addEventListener('click', () => {
-      hamburger.classList.toggle('active');
       mobileMenu.classList.toggle('hidden');
     });
   </script>

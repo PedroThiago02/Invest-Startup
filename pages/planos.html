@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Planos - Invest Equilíbrio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .smoke-bg {
+      background: radial-gradient(circle at center, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      position: relative;
+    }
+    .selo-beneficio {
+      position: absolute;
+      top: -12px;
+      right: -12px;
+      background: linear-gradient(135deg, #facc15, #f59e0b);
+      color: #4c1d95;
+      font-size: 0.75rem;
+      font-weight: bold;
+      padding: 6px 12px;
+      border-radius: 9999px;
+      opacity: 0;
+      transform: scale(0.5);
+      transition: all 0.3s ease-in-out;
+      box-shadow: 0 0 10px rgba(250, 204, 21, 0.6);
+    }
+    .plan:hover .selo-beneficio {
+      opacity: 1;
+      transform: scale(1);
+    }
+    #hamburger.active span:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+    #hamburger.active span:nth-child(2) {
+      opacity: 0;
+    }
+    #hamburger.active span:nth-child(3) {
+      transform: rotate(-45deg) translate(5px, -5px);
+    }
+  </style>
+</head>
+<body class="bg-purple-800 text-white font-sans min-h-screen flex flex-col">
+
+  <header class="bg-purple-700 p-6">
+    <div class="flex items-center justify-between">
+      <div class="flex items-center space-x-2">
+        <div class="bg-yellow-400 rounded-full w-8 h-8"></div>
+        <h1 class="text-xl font-bold">INVEST <span class="font-light">EQUILÍBRIO</span></h1>
+      </div>
+      <nav class="space-x-6 hidden md:flex mr-28">
+        <a href="../index.html" class="text-white hover:text-yellow-400 transition-colors duration-300">Início</a>
+        <a href="como-funciona.html" class="text-white hover:text-yellow-400 transition-colors duration-300">Como Funciona</a>
+        <a href="beneficios.html" class="text-white hover:text-yellow-400 transition-colors duration-300">Benefícios</a>
+        <a href="planos.html" class="text-white hover:text-yellow-400 transition-colors duration-300">Planos</a>
+        <a href="blog.html" class="text-white hover:text-yellow-400 transition-colors duration-300">Blog</a>
+        <a href="contato.html" class="text-white hover:text-yellow-400 transition-colors duration-300">Contato</a>
+      </nav>
+      <a href="login.html" class="hidden md:block">
+        <button class="bg-yellow-400 text-purple-900 font-bold px-4 py-2 rounded-full hover:scale-105 transition">Entrar</button>
+      </a>
+      <div id="hamburger" class="md:hidden flex flex-col justify-between w-8 h-6 cursor-pointer">
+        <span class="block h-1 bg-yellow-400 rounded"></span>
+        <span class="block h-1 bg-yellow-400 rounded"></span>
+        <span class="block h-1 bg-yellow-400 rounded"></span>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden flex-col space-y-4 mt-4 text-center md:hidden">
+      <a href="../index.html" class="text-white hover:text-yellow-400 transition-colors duration-300 block">Início</a>
+        <a href="como-funciona.html" class="text-white hover:text-yellow-400 transition-colors duration-300 block">Como Funciona</a>
+        <a href="beneficios.html" class="text-white hover:text-yellow-400 transition-colors duration-300 block">Benefícios</a>
+        <a href="planos.html" class="text-white hover:text-yellow-400 transition-colors duration-300 block">Planos</a>
+        <a href="blog.html" class="text-white hover:text-yellow-400 transition-colors duration-300 block">Blog</a>
+        <a href="contato.html" class="text-white hover:text-yellow-400 transition-colors duration-300 block">Contato</a>
+      <a href="login.html">
+        <button class="bg-yellow-400 text-purple-900 font-bold px-4 py-2 rounded-full mt-4">Entrar</button>
+      </a>
+    </div>
+  </header>
+
+  <main class="flex-grow flex flex-col items-center justify-center px-8 py-16 space-y-20">
+    <div class="text-center max-w-2xl">
+      <h2 class="text-4xl font-extrabold mb-4">Escolha Seu Plano</h2>
+      <p class="text-lg text-purple-200">Explore nossas opções para acelerar seu crescimento financeiro com inteligência.</p>
+    </div>
+
+    <section class="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-6xl w-full">
+      <div class="plan smoke-bg p-8 rounded-3xl flex flex-col items-center shadow-xl hover:scale-105 transition relative">
+        <div class="selo-beneficio">+ Benefícios!</div>
+        <h3 class="text-2xl font-bold mb-2">Plano Básico</h3>
+        <p class="text-center text-sm mb-4">Ideal para iniciantes no mundo dos investimentos.</p>
+        <ul class="text-sm space-y-2 mb-6">
+          <li>✔ Acesso a relatórios mensais</li>
+          <li>✔ Suporte por e-mail</li>
+          <li>✔ Investimentos a partir de R$100</li>
+        </ul>
+        <p class="text-xl font-bold mb-4">R$ 19,90/mês</p>
+        <a href="cadastro.html" class="bg-yellow-400 text-purple-900 font-bold px-6 py-2 rounded-full hover:bg-yellow-300 transition">Assinar</a>
+      </div>
+
+      <div class="plan smoke-bg p-8 rounded-3xl flex flex-col items-center shadow-xl hover:scale-105 transition relative border-2 border-yellow-400">
+        <div class="selo-beneficio">+ Benefícios!</div>
+        <h3 class="text-2xl font-bold mb-2">Plano Avançado</h3>
+        <p class="text-center text-sm mb-4">Para investidores que buscam retornos consistentes.</p>
+        <ul class="text-sm space-y-2 mb-6">
+          <li>✔ Tudo do Plano Básico</li>
+          <li>✔ Consultoria mensal por vídeo</li>
+          <li>✔ Relatórios personalizados</li>
+        </ul>
+        <p class="text-xl font-bold mb-4">R$ 39,90/mês</p>
+        <a href="cadastro.html" class="bg-yellow-400 text-purple-900 font-bold px-6 py-2 rounded-full hover:bg-yellow-300 transition">Assinar</a>
+      </div>
+
+      <div class="plan smoke-bg p-8 rounded-3xl flex flex-col items-center shadow-xl hover:scale-105 transition relative">
+        <div class="selo-beneficio">+ Benefícios!</div>
+        <h3 class="text-2xl font-bold mb-2">Plano Premium</h3>
+        <p class="text-center text-sm mb-4">Para investidores exigentes e experientes.</p>
+        <ul class="text-sm space-y-2 mb-6">
+          <li>✔ Tudo do Plano Avançado</li>
+          <li>✔ Mentoria exclusiva</li>
+          <li>✔ Acesso antecipado a oportunidades</li>
+          <li>✔ Eventos e networking VIP</li>
+        </ul>
+        <p class="text-xl font-bold mb-4">R$ 79,90/mês</p>
+        <a href="cadastro.html" class="bg-yellow-400 text-purple-900 font-bold px-6 py-2 rounded-full hover:bg-yellow-300 transition">Assinar</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-purple-900 py-6 text-center text-purple-300 text-sm">
+    <p>© 2025 Invest Equilíbrio. Todos os direitos reservados.</p>
+    <div class="flex justify-center mt-4 space-x-4">
+      <a href="#" class="hover:text-white transition">Política de Privacidade</a>
+      <a href="#" class="hover:text-white transition">Termos de Uso</a>
+    </div>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobile-menu');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+</html>

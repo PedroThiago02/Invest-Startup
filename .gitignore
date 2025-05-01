@@ -1,0 +1,16 @@
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
+
+# Configurações locais de editores
+.vscode/
+.idea/
+*.code-workspace
+
+# Arquivos temporários
+*.log
+*.tmp
+
+# Dependências (caso adicione Node.js no futuro)
+node_modules/
+dist/

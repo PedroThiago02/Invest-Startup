@@ -7,7 +7,7 @@ O projeto foi construído com HTML puro e TailwindCSS, focando em simplicidade, 
 
 ## 🌐 Acesse o Projeto
 
-> [Invest](https://pedrothiago02.github.io/Invest-Startup/)
+> [Invest Equilíbrio Financeiro](https://pedrothiago02.github.io/Invest-Startup/)
 
 ---
 
